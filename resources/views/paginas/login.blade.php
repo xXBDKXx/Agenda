@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
 </head>
-<body style="background-color: rgb(144, 108, 245)"> 
+<body style="background-color: rgb(144, 108, 245)">
     <br><br><br><br><br><br><br><br><br><br>
     <div class="container" style="background-color: rgb(0, 0, 0, 0.452); border-radius: 12px; box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;"> 
         <div class="row">
@@ -19,7 +19,7 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi vel quae amet quo neque obcaecati illo maxime rem vitae voluptatum nostrum exercitationem accusantium architecto iusto consequuntur quasi, eos omnis minus?
             </div>
             <div class="col">
-                <form>
+                <form method="POST" action="/Home">
                     <p></p>
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Endereço de e-mail:</label>
@@ -27,9 +27,9 @@
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label">Senha</label>
-                        <input type="password" class="form-control" id="senha">
+                        <input type="password" class="form-control" id="senha" placeholder="Informe a sua senha">
                     </div>
-                    <button type="submit" class="btn btn-primary">Enviar</button>
+                    <button type="submit" class="btn btn-primary">Entrar</button> Ou <a href="cadastrar">Cadastrar-se</a>.
                     <p></p>
                 </form>    
             </div>

@@ -7,7 +7,7 @@ use App\Models\cadastrarUsuarioModel;//Importar a classe que eu quero utilizar
 
 class cadastrarUsuario extends Controller
 {
-    public function index() {
+    public function cadastrar() {
         $dados = cadastrarUsuarioModel::all();
 
         return view('paginas.cadastrar')->With('dados',$dados);
