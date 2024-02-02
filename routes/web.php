@@ -19,3 +19,4 @@ Route::get('/cadastrar',[\App\http\Controllers\cadastrarUsuario::class,'cadastra
 Route::get('/home',[\App\http\Controllers\homeControl::class,'Home']);
 Route::post('/cadastrar/salvar',[\App\Http\Controllers\cadastrarUsuario::class,'store']);
 Route::post('/check',[\App\Http\Controllers\LoginUsuario::class,'check']);
+Route::post('/Agendar',[\App\Http\Controllers\LoginUsuario::class,'Agendar']);
