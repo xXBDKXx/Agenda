@@ -14,7 +14,7 @@ class cadastrarUsuario extends Controller
     }//Fim do Metodo
 
     public function store(Request $request){
-        $nomeUsuario = $request->input('nome');//Coletando dados do formulario
+        $nomeUsuario = $request->input('nome'); //Coletando dados do formulario
         $emailUsuario = $request->input('email');
         $senhaUsuario = $request->input('senha');
 
@@ -24,6 +24,6 @@ class cadastrarUsuario extends Controller
         $model->senha = $senhaUsuario;
         $model->save(); //Armazenar no Banco
 
-        return redirect('/cadastrar');
+        return redirect('/');
     }//Fim do Metodo store
 }

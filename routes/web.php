@@ -13,7 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/',  function () { return view('/paginas/login'); });
 
+Route::get('/',[\App\http\Controllers\LoginUsuario::class,'Login']);
 Route::get('/cadastrar',[\App\http\Controllers\cadastrarUsuario::class,'cadastrar']);
-Route::post('/cadastrar/salvar',[\App\Http\Controllers\cadastrarUsuario::class, 'store']);
+Route::get('/home',[\App\http\Controllers\homeControl::class,'Home']);
+Route::post('/cadastrar/salvar',[\App\Http\Controllers\cadastrarUsuario::class,'store']);
+Route::post('/check',[\App\Http\Controllers\LoginUsuario::class,'check']);
