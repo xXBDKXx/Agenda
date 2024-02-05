@@ -38,11 +38,11 @@
                         </div>
                         <div class="mb-3">
                             <label for="dataInicio" style="color: white">Data de Inicio:</label>
-                            <input type="datetime-local" id="dataInicio" name="dataInicio">
+                            <input type="date" id="dataInicio" name="dataInicio">
                         </div>
                         <div class="mb-3">
                             <label for="dataFinal" style="color: white">Data Final:</label>
-                            <input type="datetime-local" id="dataFinal" name="dataFinal">
+                            <input type="date" id="dataFinal" name="dataFinal">
                         </div>
                             <button type="submit" class="btn btn-primary">Registrar Tarefa</button> Ou <a href="consultar">Consultar Tarefa</a>
                         <p></p>  
