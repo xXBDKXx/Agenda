@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('agendar', function (Blueprint $table) {
             $table->id();
             $table->string('nome', 150)->unique();
-            $table->integer('importancia');
+            $table->string('importancia', 250);
             $table->string('descricao', 250);
             $table->date('dataInicio');
             $table->date('dataFinal');

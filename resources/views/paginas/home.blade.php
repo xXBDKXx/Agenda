@@ -28,9 +28,9 @@
                         <div class="mb-3">
                             <select class="form-select" aria-label="Default select example" id="importancia" name="importancia">
                                 <option selected>Insira o Grau de Importância da Tarefa</option>
-                                <option value="1">Pouco Importante</option>
-                                <option value="2">Relativamente Importante</option>
-                                <option value="3">Muito Importante</option>
+                                <option value="Pouco Importante">Pouco Importante</option>
+                                <option value="Relativamente Importante">Relativamente Importante</option>
+                                <option value="Muito Importante">Muito Importante</option>
                             </select>
                         </div>
                         <div class="mb-3">
