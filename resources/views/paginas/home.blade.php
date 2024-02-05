@@ -12,7 +12,7 @@
 <body style="background-color: rgb(144, 108, 245)"> 
 <div class="position-absolute top-50 start-50 translate-middle">
         <div class="container p-3" style="background-color: rgb(0, 0, 0, 0.452); border-radius: 12px; box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px; max-width: 800px;">
-            <form action="/Agendar" method="POST">
+            <form action="/home/agendar" method="POST">
                 @csrf <!-- Valida o Formulario -->
                 <div class="row"> 
                     <div class="col" style="color: white"> 
@@ -23,10 +23,10 @@
                     </div>
                     <div class="col">
                         <div class="mb-3">
-                            <input type="text" class="form-control" id="nomeTarefa" name="nomeTarefa" aria-describedby="emailHelp" placeholder="Informe o Nome da Tarefa">
+                            <input type="text" class="form-control" id="nome" name="nome" aria-describedby="emailHelp" placeholder="Informe o Nome da Tarefa">
                         </div>
                         <div class="mb-3">
-                            <select class="form-select" aria-label="Default select example">
+                            <select class="form-select" aria-label="Default select example" id="importancia" name="importancia">
                                 <option selected>Insira o Grau de Importância da Tarefa</option>
                                 <option value="1">Pouco Importante</option>
                                 <option value="2">Relativamente Importante</option>
@@ -34,7 +34,7 @@
                             </select>
                         </div>
                         <div class="mb-3">
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Descreva a Tarefa"></textarea>
+                            <textarea class="form-control" id="descricao" name="descricao" rows="3" placeholder="Descreva a Tarefa"></textarea>
                         </div>
                         <div class="mb-3">
                             <label for="dataInicio" style="color: white">Data de Inicio:</label>
@@ -44,7 +44,7 @@
                             <label for="dataFinal" style="color: white">Data Final:</label>
                             <input type="datetime-local" id="dataFinal" name="dataFinal">
                         </div>
-                            <button type="submit" class="btn btn-primary">Registrar Tarefa</button>
+                            <button type="submit" class="btn btn-primary">Registrar Tarefa</button> Ou <a href="consultar">Consultar Tarefa</a>
                         <p></p>  
                     </div>
                 </div>

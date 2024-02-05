@@ -11,7 +11,15 @@ return new class extends Migration
      */
     public function up(): void
     {
-        
+        Schema::create('agendar', function (Blueprint $table) {
+            $table->id();
+            $table->string('nome', 150)->unique();
+            $table->integer('importancia');
+            $table->string('descricao', 250);
+            $table->date('dataInicio');
+            $table->date('dataFinal');
+            $table->timestamps();
+        });
     }
 
     /**
@@ -19,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        
+        Schema::dropIfExists('agendar');
     }
 };

@@ -20,7 +20,7 @@
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, rerum saepe! Praesentium, quia? Mollitia ea laborum asperiores rem officiis corrupti, error quasi accusamus. Ab nam perferendis ad eius qui voluptas.
                 </div>
                 <div class="col" style="color: white">
-                    <form action="/check" method="POST">
+                    <form action="/home" method="GET">
                         <div class="mb-3" style="color: white">
                             <label for="exampleInputEmail1" class="form-label">Endereço de e-mail:</label>
                             <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Informe seu Email">
