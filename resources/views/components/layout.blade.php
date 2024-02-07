@@ -11,7 +11,6 @@
     
 </head>
 <body style="background-color: rgb(144, 108, 245)">
-    <h1>{{$title}}</h1>
     <div>
         {{$slot}} <!-- Quem vai ser substituida pelo conteúdo -->
     </div>

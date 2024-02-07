@@ -13,7 +13,5 @@ class LoginUsuario extends Controller
         return view('paginas.login')->With('dados',$dados); //Retorna para o arquivo login.blade.php
     }//Fim do Metodo
 
-    public function check (Request $request){
-         return  redirect('/home');
-    }
+    
 }
